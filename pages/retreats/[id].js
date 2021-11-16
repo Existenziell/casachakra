@@ -7,8 +7,6 @@ const Retreat = ({ post }) => {
 
   return (
     <div>
-
-
       <Link href={{ pathname: '/retreats', query: { postsVisible: 'true' } }}>
         <a>
           <svg
@@ -34,7 +32,6 @@ const Retreat = ({ post }) => {
     </div>
   )
 }
-
 
 Retreat.getLayout = function getLayout(page) {
   return (
