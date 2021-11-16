@@ -22,7 +22,7 @@ email: bauer.christof@gmail.com
 }
 
 input {
- @apply px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-brand text-brand mb-4;
+ @apply px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-brand text-brand;
 }
 
 textarea {
