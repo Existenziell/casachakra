@@ -21,7 +21,7 @@ const Retreat = ({ post }) => {
       </Link>
 
       <div className="flex flex-col items-center justify-content">
-        <h1 className="text-4xl mb-8">Post</h1>
+        <h1 className="text-4xl mb-8">Retreat</h1>
         <div className="shadow p-8 mb-6 bg-gray-50">
           <p className="mb-4"><span className="font-bold">ID: </span>{id}</p>
           <p className="mb-4"><span className="font-bold">Title: </span>{title}</p>
