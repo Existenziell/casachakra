@@ -8,22 +8,21 @@ const Social = () => {
         <li>
           <Link href="https://www.facebook.com/casachakras">
             <a target="_blank" rel="noopener noreferrer nofollow">
-              <Image src="/social/facebook.png" width={40} height={40} alt="Facebook"></Image>
+              <Image src="/social/facebook.png" width={20} height={20} alt="Facebook"></Image>
             </a>
           </Link>
         </li>
         <li>
           <Link href="https://www.instagram.com/casachakras/">
             <a target="_blank" rel="noopener noreferrer nofollow">
-              <Image src="/social/instagram.png" width={40} height={40} alt="Instagram"></Image>
+              <Image src="/social/instagram.png" width={20} height={20} alt="Instagram"></Image>
             </a>
           </Link>
         </li>
         <li>
-
           <Link href="https://api.whatsapp.com/send?phone=005213221400060">
             <a target="_blank" rel="noopener noreferrer nofollow">
-              <Image src="/social/whatsapp.png" width={40} height={40} alt="WhatsApp"></Image>
+              <Image src="/social/whatsapp.png" width={20} height={20} alt="WhatsApp"></Image>
             </a>
           </Link>
         </li >
