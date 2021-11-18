@@ -4,13 +4,12 @@ const Video = () => {
 
   return (
     <div>
-      <main className="w-screen pb-32 flex flex-col items-center justify-center">
+      <main className="w-screen pb-32 flex flex-col items-center justify-center px-16">
         <h1 className="text-4xl">Video</h1>
-        <div className="flex flex-wrap gap-6 items-center justify-center mt-8">
-          <video src="/video/video.mp4" controls preload="true" autoPlay={true} />
+        <div className="flex flex-col items-center justify-center mt-8 space-y-6">
+          <video src="/video/video1.mp4" controls preload="true" autoPlay={true} className='w-full' />
         </div>
       </main>
-
     </div>
   )
 }
