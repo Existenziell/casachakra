@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Layout from '../components/Layout'
 import ImageGallery from 'react-image-gallery'
 import * as Css from '../node_modules/react-image-gallery/styles/css/image-gallery.css'
@@ -6,13 +7,18 @@ import { images } from '../lib/carousell'
 export default function Index() {
   return (
     <>
-      <section className="flex flex-col items-center justify-center w-full h-screen overflow-hidden relative">
+      <section className="hidden md:flex flex-col items-center justify-center w-full h-screen overflow-hidden relative">
         <div className="z-20 p-5 text-2xl text-white bg-brand bg-opacity-50 w-full">
           Casa Chakras &#x2764;
         </div>
         <video controls={false} autoPlay={true} muted loop preload='true'
           src="/video/video1.mp4"
           className='absolute z-10 w-auto min-w-full min-h-full max-w-none' />
+      </section>
+
+      <section className='block md:hidden'>
+        <h1 className='text-3xl mt-8 mb-12'>Welcome to Casa Chakras</h1>
+        <Image src="/intro.jpg" alt="Intro" width={653} height={490} />
       </section>
 
       <div className="px-4 md:px-16 py-16 w-full">
