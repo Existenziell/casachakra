@@ -35,7 +35,7 @@ const About = () => {
           meditation
         </p>
         <p className='mb-4'>
-          aquatic Janzu, Swara prana healing therapy, Reiki,
+          Aquatic Janzu, Swara prana healing therapy, Reiki,
           Harmonization with programmed quartz, sound therapy.
           My great curiosity about the human body and the certainty that the
           emotional blocks of my lineage inhabit have led me to
