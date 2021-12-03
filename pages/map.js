@@ -7,6 +7,7 @@ import Head from "next/head"
 import Nav from "../components/Nav"
 import 'mapbox-gl/dist/mapbox-gl.css'
 import { data } from "../lib/map/data"
+import Social from "../components/Social"
 
 const mapboxgl = require("mapbox-gl/dist/mapbox-gl.js")
 
@@ -53,6 +54,7 @@ const MapComponent = () => {
           rel="stylesheet"
         />
       </Head>
+      <Social />
       <Nav />
       <div id="map" className="h-full w-full" />
     </div>

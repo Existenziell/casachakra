@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 const Social = () => {
   return (
-    <div className="absolute right-8">
-      <ul className="flex flex-col gap-4">
+    <div className="absolute right-8 top-4">
+      <ul className="flex gap-4">
         <li>
           <Link href="https://www.facebook.com/casachakras">
             <a target="_blank" rel="noopener noreferrer nofollow">
