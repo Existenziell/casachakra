@@ -17,12 +17,26 @@ email: bauer.christof@gmail.com
 @tailwind components;
 @tailwind utilities;
 
-.active-nav {
-  @apply font-bold border-b-2 border-brand;
-}
+
+/* ==========================================================================
+	Navigation
+	========================================================================== */
+
+  .active-nav {
+    @apply font-bold border-b-2 border-brand;
+  }
+  
+  .mobile-menu .active-nav {
+    @apply font-bold bg-brand text-white border-b-0;
+  }
+
+  
+/* ==========================================================================
+	Forms 
+	========================================================================== */
 
 input {
- @apply px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-brand text-brand;
+  @apply px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-brand text-brand;
 }
 
 textarea {
@@ -33,7 +47,11 @@ textarea {
   @apply bg-brand px-8 py-4 w-48 text-black rounded shadow-2xl hover:shadow transition-all my-8 hover:cursor-pointer
 }
 
-/* Mapbox fix  */
+
+/* ==========================================================================
+	Mapbox Overrides 
+	========================================================================== */
+
 .mapboxgl-canvas {
   position: absolute;
   top: 0;
@@ -44,7 +62,6 @@ textarea {
 }
 
 .mapboxgl-popup-close-button {
-  /* width: 20px; */
   font-size: 20px;
   margin-right: 4px;
 }
