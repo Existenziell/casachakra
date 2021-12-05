@@ -11,10 +11,10 @@ const Retreats = () => {
             </p>
 
             <div className='flex flex-col items-center justify-center h-full w-full'>
-                <iframe className="w-full min-h-screen mb-16 border-b-2 pb-16" src="https://www.bookyogaretreats.com/yoga-kundalini-teacher-training-in-cozumel/4-day-yoga-snorkeling-and-horseback-riding-retreat-in-cozumel"></iframe>
-                <iframe className="w-full min-h-screen mb-16 border-b-2 pb-16" src="https://www.tripaneer.com/yoga-kundalini-teacher-training-in-cozumel/14-days-yoga-therapy-and-pranachikitza-retreat-in-cozumel"></iframe>
-                <iframe className="w-full min-h-screen mb-16 border-b-2 pb-16" src="https://www.tripaneer.com/yoga-kundalini-teacher-training-in-cozumel/4-day-yoga-retreat-with-live-music-and-energetic-herbalism-in-the-island-of-cozumel?refr_s=bmr&path=/yoga-kundalini-teacher-training-in-cozumel/4-day-yoga-retreat-with-live-music-and-energetic-herbalism-in-the-island-of-cozumel"></iframe>
-                <iframe className="w-full min-h-screen mb-16 border-b-2 pb-16" src=" https://www.bookyogaretreats.com/yoga-kundalini-teacher-training-in-cozumel/14-day-kundalini-tantra-yoga-retreat-in-cozumel"></iframe>
+                <iframe title="retreat-1" className="w-full min-h-screen mb-16 border-b-2 pb-16" src="https://www.bookyogaretreats.com/yoga-kundalini-teacher-training-in-cozumel/4-day-yoga-snorkeling-and-horseback-riding-retreat-in-cozumel"></iframe>
+                <iframe title="retreat-2" className="w-full min-h-screen mb-16 border-b-2 pb-16" src="https://www.tripaneer.com/yoga-kundalini-teacher-training-in-cozumel/14-days-yoga-therapy-and-pranachikitza-retreat-in-cozumel"></iframe>
+                <iframe title="retreat-3" className="w-full min-h-screen mb-16 border-b-2 pb-16" src="https://www.tripaneer.com/yoga-kundalini-teacher-training-in-cozumel/4-day-yoga-retreat-with-live-music-and-energetic-herbalism-in-the-island-of-cozumel?refr_s=bmr&path=/yoga-kundalini-teacher-training-in-cozumel/4-day-yoga-retreat-with-live-music-and-energetic-herbalism-in-the-island-of-cozumel"></iframe>
+                <iframe title="retreat-4" className="w-full min-h-screen mb-16 border-b-2 pb-16" src=" https://www.bookyogaretreats.com/yoga-kundalini-teacher-training-in-cozumel/14-day-kundalini-tantra-yoga-retreat-in-cozumel"></iframe>
             </div>
         </div>
     )
