@@ -2,10 +2,12 @@ import { useState } from 'react'
 import Router from 'next/router'
 import Layout from '../components/Layout'
 import Social from '../components/Social'
+import CircleLoader from "react-spinners/CircleLoader"
 
 const Contact = () => {
 
     const [formData, setFormData] = useState()
+    const [sending, setSending] = useState(false)
 
     function setData(e) {
         const { name, value } = e.target
@@ -14,7 +16,7 @@ const Contact = () => {
 
     const submitForm = (e) => {
         e.preventDefault()
-
+        setSending(true)
         // ToDo: send formData to server & deliver mail
         setTimeout(() => {
             Router.push('/success')
@@ -31,10 +33,14 @@ const Contact = () => {
                 </p>
                 <div className="p-12 mt-6 shadow w-full">
                     <form onSubmit={submitForm} className="flex flex-col space-y-6 ">
-                        <input type="text" name="name" placeholder="Name" onChange={setData} required></input>
-                        <input type="email" name="email" placeholder="Email" onChange={setData} required></input>
-                        <textarea placeholder="Write me something nice :)" name="message" onChange={setData} rows="10" required></textarea>
-                        <input type="submit" className='button' value="Send"></input>
+                        <input type="text" name="name" placeholder="Name" onChange={setData} required disabled={sending}></input>
+                        <input type="email" name="email" placeholder="Email" onChange={setData} required disabled={sending}></input>
+                        <textarea placeholder="Write me something nice :)" name="message" onChange={setData} rows="10" required disabled={sending}></textarea>
+
+                        {sending
+                            ? <CircleLoader size={50} color="var(--color-brand)" />
+                            : <input type="submit" className='button' value="Send"></input>
+                        }
                     </form>
                 </div>
             </div>
