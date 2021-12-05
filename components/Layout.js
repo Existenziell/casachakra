@@ -9,7 +9,7 @@ export default function Layout({ children, title }) {
       <Head>
         <title>
           {title ?
-            `${title} | Casa Chakra`
+            `${title} | Casa Chakras`
             :
             `Casa Chakra`
           }
