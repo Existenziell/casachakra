@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Router from 'next/router'
 import Layout from '../components/Layout'
-import Social from '../components/Social'
 import CircleLoader from "react-spinners/CircleLoader"
 
 const Contact = () => {
@@ -34,7 +33,7 @@ const Contact = () => {
     }
 
     return (
-        <div className='px-4 md:px-16 py-16 w-full md:w-2/3'>
+        <div className='px-4 md:px-16 py-16 w-full lg:w-2/3'>
             <div className="flex flex-col items-center justify-content text-center">
                 <h1 className="text-4xl mb-8">Connect with us</h1>
                 <p className='text-lg'>
@@ -42,10 +41,10 @@ const Contact = () => {
                     If you have special wishes, ideas or needs for a retreat, let us know.
                 </p>
                 <div className="p-12 mt-6 shadow w-full">
-                    <form onSubmit={submitForm} className="flex flex-col space-y-6 ">
+                    <form onSubmit={submitForm} className="flex flex-col space-y-4 ">
                         <input type="text" name="name" placeholder="Name" onChange={setData} required disabled={sending}></input>
                         <input type="email" name="email" placeholder="Email" onChange={setData} required disabled={sending}></input>
-                        <textarea placeholder="Write me something nice :)" name="message" onChange={setData} rows="10" required disabled={sending}></textarea>
+                        <textarea placeholder="Write us something nice :)" name="message" onChange={setData} rows="10" required disabled={sending}></textarea>
 
                         {errorMsg ?
                             <div className='text-left bg-red-700 text-white p-4'>
