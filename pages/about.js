@@ -71,7 +71,7 @@ const About = () => {
           It is a place quietly located in El Cedral, the first original town on the island of Cozumel in Mexico.
         </p>
         <p className='mb-4'>
-          Casa Chakra is 20 minutes from downtown - 5 minutes from the beaches.
+          Casa Chakras is 20 minutes from downtown - 5 minutes from the beaches.
           You will find all the vegetation you can imagine, the birds are the natural sound of the village.
           The trees are old, the trails are friendly and the nearby cenotes are ready to be explored.
           Trees, flowers, plants and all animals are part of Casa Chakras.

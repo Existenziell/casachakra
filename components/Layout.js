@@ -10,7 +10,7 @@ export default function Layout({ children, title }) {
         <title>
           {title
             ? `${title} | Casa Chakras`
-            : `Casa Chakra`
+            : `Casa Chakras`
           }
         </title>
         <meta name="description" content="Casa Chakras | Yoga &amp; meditation retreats on the island of Cozumel in Mexico." />

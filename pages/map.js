@@ -46,7 +46,7 @@ const MapComponent = () => {
   return (
     <div className="min-w-max h-screen">
       <Head>
-        <title>Map | Casa Chakra</title>
+        <title>Map | Casa Chakras</title>
         <link rel="icon" href="/favicon/favicon.ico" />
         <link
           href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
