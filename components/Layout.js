@@ -8,12 +8,14 @@ export default function Layout({ children, title }) {
     <>
       <Head>
         <title>
-          {title ?
-            `${title} | Casa Chakras`
-            :
-            `Casa Chakra`
+          {title
+            ? `${title} | Casa Chakras`
+            : `Casa Chakra`
           }
         </title>
+        <meta name="description" content="Casa Chakras | Yoga &amp; meditation retreats on the island of Cozumel in Mexico." />
+        <meta name="author" content="Christof Bauer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png" />
         <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png" />
