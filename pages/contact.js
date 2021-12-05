@@ -24,13 +24,17 @@ const Contact = () => {
     return (
         <div className='px-4 md:px-16 py-16 w-full md:w-2/3'>
             <div className="flex flex-col items-center justify-content text-center">
-                <h1 className="text-4xl mb-8">Write me something nice :)</h1>
+                <h1 className="text-4xl mb-8">Connect with us</h1>
+                <p className='text-lg'>
+                    We would love to hear from you, get your feedback or respond to your questions.
+                    If you have special wishes, ideas or needs for a retreat, let us know.
+                </p>
                 <div className="p-12 mt-6 shadow w-full">
                     <form onSubmit={submitForm} className="flex flex-col space-y-6 ">
-                        <input type="text" name="name" placeholder="Your Name" onChange={setData} required></input>
-                        <input type="email" name="email" placeholder="Your Email" onChange={setData} required></input>
-                        <textarea placeholder="Your Message" name="message" onChange={setData} rows="10" required></textarea>
-                        <input type="submit" className='button'></input>
+                        <input type="text" name="name" placeholder="Name" onChange={setData} required></input>
+                        <input type="email" name="email" placeholder="Email" onChange={setData} required></input>
+                        <textarea placeholder="Write me something nice :)" name="message" onChange={setData} rows="10" required></textarea>
+                        <input type="submit" className='button' value="Send"></input>
                     </form>
                 </div>
             </div>
