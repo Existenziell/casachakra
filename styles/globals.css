@@ -31,11 +31,11 @@ email: bauer.christof@gmail.com
 	========================================================================== */
 
   .active-nav {
-    @apply font-bold bg-brand text-white border-none;
+    @apply font-bold bg-brand text-gray-600 border-none shadow;
   }
   
   .mobile-menu .active-nav {
-    @apply font-bold bg-brand text-white;
+    @apply font-bold bg-brand text-gray-600;
   }
 
   
