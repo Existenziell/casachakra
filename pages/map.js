@@ -26,9 +26,9 @@ const MapComponent = () => {
       style: "mapbox://styles/mapbox/satellite-v9",
       // style: "mapbox://styles/mapbox/dark-v10",
       // style: "mapbox://styles/mapbox/streets-v11",
-      zoom: 9,
+      zoom: 5,
       // pitch: 45,
-      center: [-87, 20.3],
+      center: [-87, 14.3],
     })
 
     initializeMap(mapboxgl, map)
