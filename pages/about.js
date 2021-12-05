@@ -77,8 +77,9 @@ const About = () => {
           Trees, flowers, plants and all animals are part of Casa Chakras.
         </p>
         <p className="mb-8">
-          The rooms are simple yet comfortable -
+          The rooms are simple yet furnished with love -
           if you so desire, the morning sunlight can wake you up, shining through the window.
+          The outdoor area comprises a pool, the Yoga Shala, a fireplace and a hammock area.
         </p>
       </div>
     </div>

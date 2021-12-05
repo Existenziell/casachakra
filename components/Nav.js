@@ -23,14 +23,14 @@ const Nav = () => {
     return (
         <>
             {/* Desktop menu */}
-            <div className='w-full py-3 md:py-0'>
-                <ul className="hidden md:flex justify-between items-center ml-4 w-max ">
+            <div className='w-full py-3 md:py-0 dark:bg-black dark:text-white'>
+                <ul className="hidden md:flex justify-between items-center ml-4 w-max">
                     {links.map(l => (
                         <li key={l.name}>
                             <Link href={l.url}>
                                 <a
                                     href={l.url}
-                                    className={`${router.pathname === l.url ? 'active-nav' : 'border-b-2 border-white'} hover:bg-brand hover:text-white transition-all p-4 block`}>
+                                    className={`${router.pathname === l.url ? 'active-nav' : ''} hover:bg-brand hover:text-white transition-all p-4 block`}>
 
                                     {l.name}
                                 </a>
@@ -41,13 +41,13 @@ const Nav = () => {
 
                 {/* Mobile menu */}
                 {isOpen &&
-                    <ul className="mobile-menu md:hidden absolute left-0 right-0 top-14 bg-white z-30 shadow">
+                    <ul className="mobile-menu md:hidden absolute left-0 right-0 top-14 bg-white z-30 shadow dark:bg-black dark:text-white">
                         {links.map(l => (
                             <li key={l.name}>
                                 <a
                                     href={l.url}
                                     onClick={intercept}
-                                    className={`${router.pathname === l.url && 'active-nav'} w-full block text-base px-8 py-2 hover:bg-brand hover:text-white transition-all`}>
+                                    className={`${router.pathname === l.url && 'active-nav'} w-full block text-lg px-8 py-2 hover:bg-brand hover:text-white transition-all`}>
 
                                     {l.name}
                                 </a>

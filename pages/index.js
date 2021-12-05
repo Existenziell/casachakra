@@ -17,8 +17,10 @@ export default function Index() {
 
       <div className="px-4 md:px-16 py-16 w-full">
         <p className='mb-8 text-lg lead bg-brand rounded-lg max-w-2xl mx-auto px-8 py-6 bg-opacity-50'>
-          Casa Chakras is a homey place with plenty of space for each one to have their privacy. Trees, flowers, and animals such as birds and iguanas are part of the place.
-          The rooms are simple, yet comfortable and furnished with love. The outdoor area comprises a pool, the Yoga Shala, a fireplace and a hammock area.
+          Casa Chakras is our place for retreats, workshops and everything surrounding Yoga.
+          It is a place quietly located in El Cedral, the first original town on the island of Cozumel in Mexico.
+          You will find all the vegetation you can imagine, the birds are the natural sound of the village.
+          The trees are old, the trails are friendly and the nearby cenotes are ready to be explored.
         </p>
         {/* https://www.npmjs.com/package/react-image-gallery */}
         <ImageGallery items={images} thumbnailPosition="top" />

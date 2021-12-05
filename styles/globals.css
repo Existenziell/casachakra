@@ -32,11 +32,11 @@ email: bauer.christof@gmail.com
 	========================================================================== */
 
   .active-nav {
-    @apply font-bold border-b-2 border-brand;
+    @apply font-bold bg-brand text-white border-none;
   }
   
   .mobile-menu .active-nav {
-    @apply font-bold bg-brand text-white border-b-0;
+    @apply font-bold bg-brand text-white;
   }
 
   
@@ -45,11 +45,11 @@ email: bauer.christof@gmail.com
 	========================================================================== */
 
 input {
-  @apply px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-brand;
+  @apply px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-brand dark:text-black;
 }
 
 textarea {
-  @apply px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-brand;
+  @apply px-4 py-2 border focus:outline-none focus:ring-1 focus:ring-brand dark:text-black;
 }
 
 .button {
@@ -92,7 +92,7 @@ div.mapboxgl-popup-content {
 }
 
 .mapboxgl-popup-content h1 {
-  @apply text-2xl leading-7 my-3 font-sans dark:text-white;
+  @apply text-3xl leading-7 my-6 font-sans dark:text-white;
 }
 
 .mapboxgl-popup-content img {
