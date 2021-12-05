@@ -8,19 +8,29 @@ const Contact = () => {
 
     const [formData, setFormData] = useState()
     const [sending, setSending] = useState(false)
+    const [errorMsg, setErrorMsg] = useState("")
 
     function setData(e) {
         const { name, value } = e.target
         setFormData({ ...formData, ...{ [name]: value } })
     }
 
-    const submitForm = (e) => {
+    const submitForm = async (e) => {
         e.preventDefault()
         setSending(true)
-        // ToDo: send formData to server & deliver mail
-        setTimeout(() => {
-            Router.push('/success')
-        }, 2000)
+        try {
+            const res = await fetch("/api/sendMail", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData)
+            })
+            res.ok ?
+                Router.push("/success")
+                :
+                setErrorMsg(`Sorry, an error occured: ${res.statusText}`)
+        } catch (error) {
+            setErrorMsg("Sorry, an error occured. Have you tried turning it off and on again?")
+        }
     }
 
     return (
@@ -37,9 +47,14 @@ const Contact = () => {
                         <input type="email" name="email" placeholder="Email" onChange={setData} required disabled={sending}></input>
                         <textarea placeholder="Write me something nice :)" name="message" onChange={setData} rows="10" required disabled={sending}></textarea>
 
-                        {sending
-                            ? <CircleLoader size={50} color="var(--color-brand)" />
-                            : <input type="submit" className='button' value="Send"></input>
+                        {errorMsg ?
+                            <div className='text-left bg-red-700 text-white p-4'>
+                                {errorMsg}
+                            </div>
+                            :
+                            sending
+                                ? <CircleLoader size={50} color="var(--color-brand)" />
+                                : <input type="submit" className='button' value="Send"></input>
                         }
                     </form>
                 </div>
