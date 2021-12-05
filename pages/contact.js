@@ -14,27 +14,22 @@ const Contact = () => {
 
     const submitForm = (e) => {
         e.preventDefault()
-        // console.log(formData)
 
         // ToDo: send formData to server & deliver mail
         setTimeout(() => {
             Router.push('/success')
-        }, 4000)
+        }, 2000)
     }
 
     return (
-        <div className=''>
+        <div className='px-4 md:px-16 py-16 w-full md:w-2/3'>
             <div className="flex flex-col items-center justify-content text-center">
                 <h1 className="text-4xl mb-8">Write me something nice :)</h1>
-                {/* <div className="shadow p-8 bg-gray-100 rounded-xl">
-                    <p>Quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae.<br />Ut quas totam nostrum rerum est autem sunt rem eveniet architecto.</p>
-                </div> */}
-
                 <div className="p-12 mt-6 shadow w-full">
                     <form onSubmit={submitForm} className="flex flex-col space-y-6 ">
-                        <input type="text" name="name" placeholder="Your Name" onChange={setData}></input>
-                        <input type="email" name="email" placeholder="Your Email" onChange={setData}></input>
-                        <textarea placeholder="Your Message" name="message" onChange={setData} rows="10"></textarea>
+                        <input type="text" name="name" placeholder="Your Name" onChange={setData} required></input>
+                        <input type="email" name="email" placeholder="Your Email" onChange={setData} required></input>
+                        <textarea placeholder="Your Message" name="message" onChange={setData} rows="10" required></textarea>
                         <input type="submit" className='button'></input>
                     </form>
                 </div>

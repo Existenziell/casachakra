@@ -3,7 +3,7 @@ import Social from '../components/Social'
 
 const Success = () => {
   return (
-    <div className="pb-32 h-screen">
+    <div className="h-screen">
       <div className="flex flex-col items-center justify-center text-center text-3xl text-brand h-full">
         <h1>Thank you!</h1>
         <svg xmlns="http://www.w3.org/2000/svg" className="h-64 w-64" fill="none" viewBox="0 0 24 24" stroke="currentColor">

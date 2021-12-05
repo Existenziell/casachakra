@@ -5,11 +5,10 @@ import Link from 'next/link'
 const Nav = () => {
 
     const links = [
-        { name: "Home", url: "/" },
+        { name: "Base", url: "/" },
         { name: "Retreats", url: "/retreats" },
         { name: "About", url: "/about" },
         { name: "Contact", url: "/contact" },
-        { name: "Video", url: "/video" },
         { name: "Map", url: "/map" },
     ]
     const router = useRouter()
@@ -42,7 +41,7 @@ const Nav = () => {
 
                 {/* Mobile menu */}
                 {isOpen &&
-                    <ul className="mobile-menu md:hidden absolute left-0 right-0 top-14 bg-white z-10">
+                    <ul className="mobile-menu md:hidden absolute left-0 right-0 top-14 bg-white z-30 shadow">
                         {links.map(l => (
                             <li key={l.name}>
                                 <a

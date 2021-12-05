@@ -26,10 +26,9 @@ const MapComponent = () => {
       style: "mapbox://styles/mapbox/satellite-v9",
       // style: "mapbox://styles/mapbox/dark-v10",
       // style: "mapbox://styles/mapbox/streets-v11",
-      center: [-77.02, 38.887],
       zoom: 9,
       // pitch: 45,
-      center: [-86.9, 20.4],
+      center: [-87, 20.3],
     })
 
     initializeMap(mapboxgl, map)
@@ -48,7 +47,7 @@ const MapComponent = () => {
     <div className="min-w-max h-screen">
       <Head>
         <title>Map | Casa Chakra</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon/favicon.ico" />
         <link
           href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
           rel="stylesheet"

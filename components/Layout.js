@@ -34,7 +34,7 @@ export default function Layout({ children, title }) {
       </Head>
       <Social />
       <Nav />
-      <main className="flex flex-col items-center justify-center text-center w-screen px-16 mt-16 pb-32">
+      <main className="flex flex-col items-center justify-center text-center w-full dark:bg-black dark:text-white">
         {children}
       </main>
       <Footer />

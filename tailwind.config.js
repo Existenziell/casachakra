@@ -1,7 +1,7 @@
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // false||'media'||'class'
   theme: {
     extend: {
       fontFamily: {
@@ -11,7 +11,12 @@ module.exports = {
         ],
       },
       colors: {
-        'brand': '#2EFFFF',
+        'brand': '#43eaea',
+      },
+      minWidth: {
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
       },
     },
   },

@@ -1,45 +1,21 @@
-import { useState, useEffect } from 'react'
-import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Layout from '../../components/Layout'
 
-const Retreats = ({ posts }) => {
-
-    const [postsVisible, setPostsVisible] = useState(false)
-    const router = useRouter()
-
-    // Check url params for postsVisible=true
-    useEffect(() => {
-        if (router.query.postsVisible) {
-            setPostsVisible(true)
-        }
-    }, [])
-
+const Retreats = () => {
     return (
-        <div>
-            <h1 className="text-4xl">Retreats</h1>
-            <button onClick={() => setPostsVisible(!postsVisible)} className='button'>
-                {!postsVisible ? `Show Retreats` : `Hide Retreats`}
-            </button>
+        <div className='px-4 md:px-16 py-16 w-full'>
+            <h1 className="text-4xl mb-8">Retreats</h1>
+            <p className='leading-normal text-lg mb-12'>
+                We offer various retreats with different activities - here is a list of our current ones:<br />
+                <Link href="/contact"><a className="link">Contact us</a></Link> for special inquieres, we try to make every dream come true :)
+            </p>
 
-            {postsVisible &&
-                <div className='flex flex-col text-left'>
-                    {posts.map((post) => {
-                        const { body, id, title, userId } = post
-                        return (
-                            <Link href={`/retreats/${id}`} key={id}>
-                                <a className="shadow p-8 bg-gray-50 rounded mb-6 hover:shadow-none">
-                                    <p className="mb-4"><span className="font-bold">ID: </span>{id}</p>
-                                    <p className="mb-4"><span className="font-bold">Title: </span>{title}</p>
-                                    <p className="mb-4"><span className="font-bold">Content: </span>{body}</p>
-                                    <p className="mb-4"><span className="font-bold">User: </span>{userId}</p>
-                                </a>
-                            </Link>
-                        )
-                    })}
-                </div>
-            }
-
+            <div className='flex flex-col items-center justify-center h-full w-full'>
+                <iframe className="w-full min-h-screen mb-16 border-b-2 pb-16" src="https://www.bookyogaretreats.com/yoga-kundalini-teacher-training-in-cozumel/4-day-yoga-snorkeling-and-horseback-riding-retreat-in-cozumel"></iframe>
+                <iframe className="w-full min-h-screen mb-16 border-b-2 pb-16" src="https://www.tripaneer.com/yoga-kundalini-teacher-training-in-cozumel/14-days-yoga-therapy-and-pranachikitza-retreat-in-cozumel"></iframe>
+                <iframe className="w-full min-h-screen mb-16 border-b-2 pb-16" src="https://www.tripaneer.com/yoga-kundalini-teacher-training-in-cozumel/4-day-yoga-retreat-with-live-music-and-energetic-herbalism-in-the-island-of-cozumel?refr_s=bmr&path=/yoga-kundalini-teacher-training-in-cozumel/4-day-yoga-retreat-with-live-music-and-energetic-herbalism-in-the-island-of-cozumel"></iframe>
+                <iframe className="w-full min-h-screen mb-16 border-b-2 pb-16" src=" https://www.bookyogaretreats.com/yoga-kundalini-teacher-training-in-cozumel/14-day-kundalini-tantra-yoga-retreat-in-cozumel"></iframe>
+            </div>
         </div>
     )
 }
@@ -50,20 +26,6 @@ Retreats.getLayout = function getLayout(page) {
             {page}
         </Layout>
     )
-}
-
-// This function gets called at build time on server-side.
-// It may be called again, on a serverless function, if
-// revalidation is enabled and a new request comes in
-export async function getStaticProps(ctx) {
-    const response = await fetch('https://jsonplaceholder.typicode.com/posts/')
-    const posts = await response.json()
-
-    return {
-        props: {
-            posts,
-        }
-    }
 }
 
 export default Retreats

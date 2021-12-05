@@ -6,7 +6,7 @@ const Retreat = ({ post }) => {
   const { id, body, title, userId } = post
 
   return (
-    <div>
+    <div className='px-4 md:px-16 py-16'>
       <Link href={{ pathname: '/retreats', query: { postsVisible: 'true' } }}>
         <a>
           <svg
@@ -20,9 +20,9 @@ const Retreat = ({ post }) => {
         </a>
       </Link>
 
-      <div className="flex flex-col items-center justify-content">
+      <div className="flex flex-col items-center justify-content ">
         <h1 className="text-4xl mb-8">Retreat</h1>
-        <div className="shadow p-8 mb-6 bg-gray-50">
+        <div className="shadow p-8 mb-6 rounded bg-gray-50 dark:bg-gray-800">
           <p className="mb-4"><span className="font-bold">ID: </span>{id}</p>
           <p className="mb-4"><span className="font-bold">Title: </span>{title}</p>
           <p className="mb-4"><span className="font-bold">Content: </span>{body}</p>
