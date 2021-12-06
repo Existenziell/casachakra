@@ -40,8 +40,8 @@ const Contact = () => {
                     We would love to hear from you, get your feedback or respond to your questions.
                     If you have special wishes, ideas or needs for a retreat, let us know.
                 </p>
-                <div className="p-12 mt-6 shadow w-full">
-                    <form onSubmit={submitForm} className="flex flex-col space-y-4 ">
+                <div className="w-full mt-6 p-4 md:p-12 shadow rounded dark:bg-gray-800">
+                    <form onSubmit={submitForm} className="flex flex-col space-y-4">
                         <input type="text" name="name" placeholder="Name" onChange={setData} required disabled={sending}></input>
                         <input type="email" name="email" placeholder="Email" onChange={setData} required disabled={sending}></input>
                         <textarea placeholder="Write us something nice :)" name="message" onChange={setData} rows="10" required disabled={sending}></textarea>
